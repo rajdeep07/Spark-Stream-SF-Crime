@@ -87,7 +87,6 @@ def run_spark_job(spark):
     # TODO join on disposition column
     join_query = agg_df.join(radio_code_df, psf.col('agg_df.disposition') == psf.col('radio_code_df.disposition'), 'left_outer')
 
-
     join_query.awaitTermination()
 
 
