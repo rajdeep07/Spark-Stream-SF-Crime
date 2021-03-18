@@ -24,19 +24,19 @@ Packages required:
    Run `kafka-console-consumer --bootstrap-server localhost:9092 --topic police.service.calls --from-beginning`
    
    Output looks like this:
-   <img src='images/sf_kafka_console_consumer_output.PNG'/>
+   <img src='sf_kafka_console_consumer_output.PNG'/>
 
 5. Run consumer (NOTE : Apache Spark already has an integration with Kafka brokers, so we would not normally need a separate Kafka consumer):
    To run producer run `python consumer_server.py`
    
    Output looks like this:
-   <img src='images/sf_consumer_server_output.PNG'/>
+   <img src='sf_consumer_server_output.PNG'/>
 
 6. Run Streaming Application:
    To execute `data_stream.py` run `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py`
    
    Spark UI while executing looks like this:
-   <img src='images/spark_ui.PNG'/>
+   <img src='spark_ui.PNG'/>
 
 Answers to Udacity's Questions :
 
